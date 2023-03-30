@@ -1,15 +1,16 @@
 const gridContainer = document.querySelector("#gridContainer");
 
-const numInput = Number(window.prompt("Type a number", ""));
+// const numInput = Number(window.prompt("Type a number", ""));
+const numInput = 50;
 
 for (i = 0; i < numInput ** 2; i++) {
     const square = document.createElement("div");
-    square.classList.add("square")
-    gridContainer.appendChild(square)
+    square.classList.add("square");
+    gridContainer.appendChild(square);
 }
 
-const containerWidth = 960;
-gridContainer.style.width = `${containerWidth}px`
+const containerWidth = 600;
+gridContainer.style.width = `${containerWidth}px`;
 gridContainer.style.gridTemplateColumns = `repeat(${numInput}, ${containerWidth/numInput}px [test])`;
 gridContainer.style.gridTemplateRows = `repeat(${numInput}, ${containerWidth/numInput}px [test])`;
 
@@ -23,5 +24,14 @@ gridContainer.addEventListener("mouseover", (event) => {
     }
 });
 
-// console.log(randomNumber);
 
+const numberSlider = document.getElementById("numberSlider");
+const textForSlider1 = document.getElementById("textForSlider1");
+const textForSlider2 = document.getElementById("textForSlider2");
+textForSlider1.innerHTML = numberSlider.value;
+textForSlider2.innerHTML = numberSlider.value;
+
+numberSlider.oninput = function() {
+    textForSlider1.innerHTML = this.value;
+    textForSlider2.innerHTML = this.value;
+}

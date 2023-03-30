@@ -9,6 +9,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="gridContainer"></div>
+    <div id="top">
+        <div id="header"><h1>Etch a Sketch</h1></div>
+        <div id="content">
+            <div id="layoutContainer">
+                <div id="gridContainer"></div>
+                <div id="sideBar">
+                    <div id="buttonContainer">
+                        <button class="btnSideBar">Black</button>
+                        <button class="btnSideBar">Random</button>
+                        <button class="btnSideBar">Darken</button>
+                        <button class="btnSideBar">Lighten</button>
+                        <button class="btnSideBar">Erase</button>            
+                        <button class="btnSideBar">Clear</button>
+                    </div>
+                    <div id="sliderContainer">
+                        <input type="range" min="1" max="100" value="50" id="numberSlider">
+                        <div id="gridText">
+                            Grid: <span id="textForSlider1"></span> x <span id="textForSlider2"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <div id="footer">Made by DJ-Juarez</div>
 </body>
 </html>

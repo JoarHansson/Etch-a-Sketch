@@ -1,9 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Staatliches&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Contrail One", sans-serif;
+    font-size: 16px;
+    background-color: lightgrey;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+    font-family: Staatliches, "Contrail One", sans-serif;
+    letter-spacing: 0.25rem;
+    font-size: 6rem;
+    margin: 2rem 0;
+    color: #425fbe;
+    /* text-shadow: 2px 2px 2px  #212f5f;      */
+}
+
+#content {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#layoutContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 0rem;
+    box-shadow: 0px 0px 16px 0px  rgb(44, 44, 44); 
+}
+
 #gridContainer {
     display: grid;
+    padding: 1rem;
+    background-color: rgb(44, 44, 44);
 }
 
 .square {
     box-sizing: border-box;
-    margin: 0.5px;
+    margin: 0;
     background-color: lightgrey;
+}
+
+#sideBar {
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;   
+    padding: 1rem 1rem 1rem 0rem;
+}
+
+#buttonContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.btnSideBar {
+    background-color: lightgray;
+    font: inherit;
+    color: rgb(24, 24, 24);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-style: none;
+    border-radius: 0.25rem;
+    min-width: 90px;
+    box-sizing: content-box;
+
+}
+
+.btnSideBar:hover {
+    /* scale: 0.95; */
+    border-color: lightgray;
+    box-shadow: 0px 0px 8px 0px  lightgrey; 
+    -webkit-transition: 0.2s;
+    transition: box-shadow 0.2s;
+}
+
+/* Slider */
+#sliderContainer {
+    width: 100%;
+    margin: 0;
+}
+
+#numberSlider {
+    -webkit-appearance: none;
+    appearance: none;
+    background: rgb(44, 44, 44);
+    width: 100%;
+    opacity: 1;
+    height: 24px;
+    border: solid 10.5px lightgrey;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    box-sizing: border-box;
+    margin: 0 0 1rem;
+    border-radius: 0.25rem;
+}
+
+#numberSlider:hover {
+    opacity: 1;
+    border-color: lightgray;
+    box-shadow: 0px 0px 4px 0px  lightgrey; 
+    -webkit-transition: 0.2s;
+    transition: box-shadow 0.2s;
+}
+
+#numberSlider::-webkit-slider-thumb {
+   -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 20px;
+    background: #425fbe; 
+    cursor: pointer;
+}
+  
+#numberSlider::-moz-range-thumb {
+    width: 10px;
+    height: 20px;
+    background: #425fbe;
+    cursor: pointer;
+}
+
+#gridText {
+    color: lightgrey;
+    font-size: 1.25rem;
+}
+
+#footer {
+    justify-self: flex-end;
+    color: #425fbe;
+    margin: 0 auto 0.5rem;
 }
