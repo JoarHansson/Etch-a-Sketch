@@ -139,6 +139,8 @@ h1 {
 }
   
 #numberSlider::-moz-range-thumb {
+    border-style: none;
+    border-radius: 0px;
     width: 10px;
     height: 20px;
     background: #425fbe;
