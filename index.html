@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Etch á la Sketch</title>
     <script src="javascript.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
 </head>
 <body>
-    <div id="top">
-        <div id="header"><h1>Etch a Sketch</h1></div>
+    <div id="everythingButFooter">
+        <div id="header"><h1>Etch á la Sketch</h1></div>
         <div id="content">
-            <div id="layoutContainer">
-                <div id="gridContainer"></div>
-                <div id="sideBar">
-                    <div id="buttonContainer">
-                        <button class="btnSideBar">Black</button>
-                        <button class="btnSideBar">Random</button>
-                        <button class="btnSideBar">Darken</button>
-                        <button class="btnSideBar">Lighten</button>
-                        <button class="btnSideBar">Erase</button>            
-                        <button class="btnSideBar">Clear</button>
-                    </div>
-                    <div id="sliderContainer">
-                        <input type="range" min="1" max="100" value="50" id="numberSlider">
-                        <div id="gridText">
-                            Grid: <span id="textForSlider1"></span> x <span id="textForSlider2"></span>
-                        </div>
+            <div id="gridContainer"></div>
+            <div id="sideBar">
+                <div id="buttonContainer">
+                    <button class="btnSideBar" id="btnBlack">Black</button>
+                    <button class="btnSideBar" id="btnRandom">Random</button>
+                    <button class="btnSideBar" id="btnDarken">Darken</button>
+                    <button class="btnSideBar" id="btnErase">Erase</button>            
+                    <button class="btnSideBar" id="btnClear">Clear</button>
+                </div>
+                <div id="sliderContainer">
+                    <input type="range" min="1" max="100" value="50" id="numberSlider">
+                    <div id="sliderTextAndBtnContainer">
+                        <div id="sliderText">50 x 50</div>
+                        <button id="btnSlider">APPLY</button>
                     </div>
                 </div>
             </div>
-        </div>  
+        </div>
     </div>
-    <div id="footer">Made by DJ-Juarez</div>
+    <div id="footer">
+        <a href="https://github.com/DJ-Juarez/Etch-a-Sketch" 
+        target="_blank">Made by DJ-Juarez</a>
+    </div>
 </body>
 </html>
