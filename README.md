@@ -2,4 +2,4 @@
 
 A project to learn JavaScript.
 
-<a href="https://dj-juarez.github.io/Etch-a-Sketch/" target="_blank">Live preview</a>
+<a href="https://joarhansson.github.io/Etch-a-Sketch/" target="_blank">Live preview</a>
